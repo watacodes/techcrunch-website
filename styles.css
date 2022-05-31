@@ -2,6 +2,148 @@
     margin: 0;
     padding: 0;
     --nav-color-yellow: #dca946;
-    --nav-color-hover: #ff6900;
+    --nav-color-hover-orange: #ff6900;
+    --nav-font-hover-green: #00a562;
     --nav-font: #777;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.logo-wrapper {
+    display: grid;
+    grid-template-rows: 60px 40px 60px;
+}
+
+li,
+li a,
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    padding: 30px;
+    top: 0;
+    left: 0;
+    width: 210px;
+    float: left;
+}
+
+.logo {
+    width: 60px;
+    height: 30px;
+    grid-row: 1 / 2;
+    
+}
+
+.yellow {
+    color: var(--nav-color-yellow);
+    font-weight: 800;
+    font-size: 20px;
+    grid-row: 2 / 3;
+}
+
+.login {
+    grid-row: 3 / 4;
+    color: var(--nav-font);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    gap: 16px;
+}
+
+.nav-wrapper a {
+    color: var(--nav-font);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.article-wrapper {
+    position: relative;
+    margin: 0 200px 0 210px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 24px;
+}
+
+.main-header {
+    margin-bottom: 16px;
+}
+
+.main-news a {
+    text-decoration: none;
+    color: black;
+}
+
+.writer:hover {
+    color: var(--nav-font-hover-green);
+}
+
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.monkey-pic {
+    margin-top: 16px;
+    width: 750px;
+    height: 500px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.articles > a {
+    justify-content: flex-start;
+}
+
+
+.articles a {
+    color: black;
+}
+
+.news-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.writer {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.search-icon {
+    margin-top: 4px;
+    height: 16px;
+    width: 16px; 
+}
+
+.nav-wrapper a:hover {
+    color: var(--nav-font-hover-green);
+}
+
+a.orange:hover {
+    color: var(--nav-color-hover-orange);
+}
+
+.main-header:hover,
+.news-link:hover {
+    color: var(--nav-font);
+}
+
+.underline {
+    border-bottom: 1px solid rgba(128, 128, 128, .5);
+    padding-bottom: 16px;
 }
