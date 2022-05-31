@@ -1,19 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-
+    --nav-color-yellow: #dca946;
+    --nav-color-hover: #ff6900;
+    --nav-font: #777;
 }
-
-/* body {
-    position: relative;
-    border: 2px solid black;
-}
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 2px solid red;
-    width: 200px;
-}
- */
